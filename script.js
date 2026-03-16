@@ -5,22 +5,17 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-// Close the menu when clicking outside
 document.addEventListener("click", function (event) {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-
   if (!menu || !icon) return;
-
-  const isClickInsideMenu = menu.contains(event.target);
-  const isClickInsideIcon = icon.contains(event.target);
-
-  if (!isClickInsideMenu && !isClickInsideIcon) {
+  if (!menu.contains(event.target) && !icon.contains(event.target)) {
     menu.classList.remove("open");
     icon.classList.remove("open");
   }
 });
-// Certificate preview modal
+
+// Certificate modal
 const modal = document.getElementById("imgModal");
 const modalImg = document.getElementById("modalImg");
 
@@ -41,11 +36,30 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// ESC to close
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal && modal.classList.contains("open")) {
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
     if (modalImg) modalImg.src = "";
   }
+});
+
+// Smooth scroll active nav highlight
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+  navLinks.forEach((link) => {
+    link.style.color = "";
+    if (link.getAttribute("href") === `#${current}`) {
+      link.style.color = "#6366f1";
+    }
+  });
 });

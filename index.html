@@ -8,22 +8,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-
   <body>
+
     <!-- Desktop Nav -->
     <nav id="desktop-nav">
       <div class="logo">Shourav Mandal</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#certification">Certification</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certification">Certification</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- Mobile Nav -->
@@ -45,273 +43,307 @@
       </div>
     </nav>
 
-    <!-- Hero / Profile -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Shourav Mandal profile picture" />
-      </div>
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/profile-pic.jpg" alt="Shourav Mandal" />
+  </div>
 
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Shourav Mandal</h1>
-        <p class="section__text__p2">
-          Software Engineer (Java & Python) • AI/LLM Systems • RAG & Vector Search
-        </p>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Shourav Mandal</h1>
+    <p class="section__text__p2">
+      AI-focused Software Engineer building intelligent systems with Java, Python, and cutting-edge LLM technology.
+    </p>
 
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Resume - Shourav Mandal.pdf')">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
+    <div class="hero-tags">
+      <span class="hero-tag">🤖 AI & LLM Systems</span>
+      <span class="hero-tag">🔍 RAG & Vector Search</span>
+      <span class="hero-tag">☕ Java & Spring Boot</span>
+      <span class="hero-tag">🐍 Python & Flask</span>
+      <span class="hero-tag">☁️ AWS & GCP</span>
+    </div>
 
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/shouravkm/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Shourav5000'"
-          />
-        </div>
-      </div>
-    </section>
+<div class="hero-actions">
+  <button class="btn btn-color-2" onclick="window.open('./assets/Resume_-_Shourav_Mandal.pdf')">Download CV</button>
+  <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+  <div class="social-icon-wrap" onclick="location.href='https://www.linkedin.com/in/shouravkm/'">
+    <img src="./assets/linkedin.png" alt="LinkedIn" />
+  </div>
+  <div class="social-icon-wrap" onclick="location.href='https://github.com/Shourav5000'">
+    <img src="./assets/github.png" alt="GitHub" />
+  </div>
+</div>
+</section>
 
     <!-- About -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
-        </div>
-
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>What I Do</h3>
-              <p>
-                AI/LLM Software Engineering<br />
-                Java + Python Backend Systems
-              </p>
-            </div>
-
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Focus Areas</h3>
-              <p>
-                RAG • Vector Databases • LangChain<br />
-                Microservices • Cloud • CI/CD
-              </p>
-            </div>
+      <div class="about-wrapper">
+        <div class="about-left">
+          <div class="about-pic-wrap">
+            <img src="./assets/about-pic.jpg" alt="Shourav Mandal" class="about-pic" />
           </div>
-
-          <div class="text-container">
-            <p>
-              I’m a Software Engineer focused on building production-ready AI/LLM systems using
-              <strong>Java</strong> and <strong>Python</strong>. I design scalable backend services, integrate
-              <strong>Retrieval-Augmented Generation (RAG)</strong> with <strong>vector search</strong>, and
-              ship reliable microservices on cloud infrastructure. I enjoy turning model prototypes into
-              real products—clean APIs, strong observability, and performance that holds up under load.
-            </p>
+          <div class="about-stats">
+            <div class="about-stat"><span class="stat-number">5+</span><span class="stat-label">Years Experience</span></div>
+            <div class="about-stat"><span class="stat-number">3</span><span class="stat-label">AI Projects Live</span></div>
+            <div class="about-stat"><span class="stat-number">3</span><span class="stat-label">Companies</span></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-bio">I'm an <strong>AI-focused Software Engineer</strong> with 5+ years of experience building production-ready systems at <strong>Meta</strong> and <strong>USPS</strong>. I specialize in integrating <strong>Large Language Models (LLMs)</strong> into real products — designing secure backend APIs, implementing <strong>Retrieval-Augmented Generation (RAG)</strong> pipelines, and shipping reliable microservices on cloud infrastructure.</p>
+          <p class="about-bio" style="margin-top:0.75rem;">Recently I've built three fully deployed AI projects from scratch — an autonomous AI agent with web search and vision, a RAG document analysis system, and an LLM-powered chatbot — all live and available on my portfolio.</p>
+          <div class="about-highlights">
+            <div class="about-highlight-card">
+              <span class="highlight-emoji">🤖</span>
+              <div><h4>AI & LLM Systems</h4><p>RAG pipelines, vector search, LangGraph agents, Claude API</p></div>
+            </div>
+            <div class="about-highlight-card">
+              <span class="highlight-emoji">☕</span>
+              <div><h4>Backend Engineering</h4><p>Java, Spring Boot, Python Flask, REST APIs, microservices</p></div>
+            </div>
+            <div class="about-highlight-card">
+              <span class="highlight-emoji">☁️</span>
+              <div><h4>Cloud & DevOps</h4><p>AWS, GCP, Docker, CI/CD, Jenkins, GitHub Actions</p></div>
+            </div>
+            <div class="about-highlight-card">
+              <span class="highlight-emoji">🎓</span>
+              <div><h4>Education</h4><p>M.S. Computer Science (AI & ML) • B.S. Computer Science</p></div>
+            </div>
           </div>
         </div>
       </div>
-
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
 
     <!-- Experience -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
+      <div class="timeline">
 
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <!-- Meta -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Engineer – AI & LLM Systems</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Meta (Facebook) — Contract</h3>
-                  <p><strong>Platform:</strong> UIGen (AI-enabled internal platform)</p>
-                  <ul>
-                    <li>
-                      Built and maintained <strong>Java/Spring Boot</strong> microservices and
-                      <strong>REST APIs</strong> supporting AI-driven workflows, model inference, and admin tooling.
-                    </li>
-                    <li>
-                      Productionized ML/LLM integrations by designing service interfaces, request/response contracts,
-                      and <strong>structured output validation</strong> for downstream safety and reliability.
-                    </li>
-                    <li>
-                      Implemented <strong>RAG-style retrieval</strong> patterns (document ingestion → embeddings →
-                      vector search → grounded responses) to improve relevance and reduce hallucinations.
-                    </li>
-                    <li>
-                      Partnered with data scientists to operationalize models, monitor drift/performance, and tune
-                      latency/throughput for real-world load.
-                    </li>
-                    <li>
-                      Deployed services on <strong>AWS</strong> and contributed to cloud workflows across <strong>AWS/GCP</strong>,
-                      using CI/CD automation and observability best practices.
-                    </li>
-                    <li>
-                      Worked in <strong>Agile</strong> delivery cycles (planning, stand-ups, reviews, retros) with
-                      cross-functional engineering and product teams.
-                    </li>
-                  </ul>
-                </div>
-              </article>
+        <!-- Meta -->
+        <div class="timeline-item">
+          <div class="timeline-logo-col">
+            <img src="./assets/meta-logo.jpg" alt="Meta" class="timeline-logo" />
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">
+                <h2>Software Engineer — AI & LLM Systems</h2>
+                <p class="timeline-company">Meta (Facebook) | Menlo Park, California</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">📅 Oct 2025 – Present</span>
+                <span class="timeline-type contract">Contract</span>
+              </div>
+            </div>
+            <p class="timeline-summary">Contributed to the <strong>UIGen platform</strong> — Meta's internal AI-enabled service for deploying and administering ML models in production. Built Java/Spring Boot microservices, implemented RAG-style retrieval patterns, and deployed AI systems on AWS/GCP.</p>
+            <ul class="timeline-bullets">
+              <li>Transformed ML models from data science teams into production-ready UIGen platform services.</li>
+              <li>Designed and maintained <strong>Java/Spring Boot</strong> microservices and <strong>REST APIs</strong> supporting AI-driven workflows and model inference.</li>
+              <li>Implemented <strong>RAG-style retrieval</strong> (document ingestion → embeddings → vector search → grounded responses) to reduce hallucinations.</li>
+              <li>Partnered with data scientists to operationalize models, monitor drift, and tune latency/throughput.</li>
+              <li>Deployed scalable AI systems on <strong>AWS</strong> and <strong>GCP</strong> with CI/CD automation and observability best practices.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Java</span><span>Spring Boot</span><span>Python</span><span>REST APIs</span>
+              <span>RAG</span><span>Vector Search</span><span>AWS</span><span>GCP</span><span>CI/CD</span><span>Jenkins</span>
             </div>
           </div>
-
-          <!-- USPS -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Engineer (Backend / Platform)</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>United States Postal Service — Contract</h3>
-                  <p><strong>Systems:</strong> Admin Portal & SuperAdmin Interface</p>
-                  <ul>
-                    <li>
-                      Developed and enhanced backend capabilities using <strong>Java</strong>, <strong>Spring</strong>,
-                      and <strong>REST APIs</strong> to support internal operational tooling.
-                    </li>
-                    <li>
-                      Improved performance and reliability through refactoring, debugging, and production support.
-                    </li>
-                    <li>
-                      Collaborated with stakeholders to deliver secure, maintainable, production-ready features in
-                      iterative releases.
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- SS&C -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Engineer Intern</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>SS&C Technologies</h3>
-                  <ul>
-                    <li>
-                      Supported backend development tasks including API work, debugging, documentation, and
-                      collaborative Git workflows.
-                    </li>
-                    <li>
-                      Assisted with feature implementation and testing in an iterative, team-based development process.
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- NYC DOB -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">System Production Support Intern</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>NYC Department of Buildings</h3>
-                  <ul>
-                    <li>
-                      Supported internal systems by troubleshooting production issues, validating updates, and maintaining
-                      operational documentation.
-                    </li>
-                    <li>
-                      Assisted technical teams with reporting and reliability-focused support workflows.
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
-
         </div>
-      </div>
 
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+        <!-- USPS -->
+        <div class="timeline-item">
+          <div class="timeline-logo-col">
+            <img src="./assets/usps-logo.jpg" alt="USPS" class="timeline-logo" />
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">
+                <h2>Software Engineer — Backend / Platform</h2>
+                <p class="timeline-company">United States Postal Service | Wilkes-Barre, Pennsylvania</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">📅 Jun 2022 – Oct 2025</span>
+                <span class="timeline-type contract">Contract</span>
+              </div>
+            </div>
+            <p class="timeline-summary">Developed and enhanced the <strong>USPS Admin Portal</strong> and SuperAdmin Functional Interface — internal tools for postal operations, label design, and administrative workflows.</p>
+            <ul class="timeline-bullets">
+              <li>Developed scalable <strong>Java/Spring Boot</strong> backend services and REST APIs deployed on <strong>AWS EC2</strong>.</li>
+              <li>Built dynamic frontend components using <strong>TypeScript</strong>, HTML5, CSS3, and <strong>React.js/Next.js</strong>.</li>
+              <li>Managed database interactions using <strong>JPA/Hibernate</strong> with Oracle (relational) and Redis (NoSQL).</li>
+              <li>Containerized applications using <strong>Docker</strong> and maintained CI/CD pipelines via Jenkins on AWS (S3, EC2).</li>
+              <li>Collaborated in <strong>Agile</strong> cycles delivering secure, maintainable, production-ready features.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Java</span><span>Spring Boot</span><span>TypeScript</span><span>React.js</span>
+              <span>Next.js</span><span>Oracle DB</span><span>Redis</span><span>Docker</span><span>AWS EC2</span><span>Jenkins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SS&C -->
+        <div class="timeline-item">
+          <div class="timeline-logo-col">
+            <img src="./assets/SSC-logo.jpg" alt="SS&C" class="timeline-logo" />
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">
+                <h2>Software Engineer Intern</h2>
+                <p class="timeline-company">SS&C Technologies | Manhattan, NYC</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">📅 Jun 2022 – Jul 2023</span>
+                <span class="timeline-type intern">Internship</span>
+              </div>
+            </div>
+            <p class="timeline-summary">Created a web-based healthcare data management solution, improving query performance, UI/UX, and data security for medical professionals.</p>
+            <ul class="timeline-bullets">
+              <li>Built frontend and backend components using <strong>RESTful APIs</strong> and microservices architecture.</li>
+              <li>Enhanced SQL queries and database interactions to boost data retrieval performance.</li>
+              <li>Implemented data validation to prevent SQL injection and security vulnerabilities.</li>
+              <li>Redesigned the homepage with <strong>UI/UX best practices</strong> improving user engagement.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Java</span><span>JavaScript</span><span>REST APIs</span><span>SQL</span><span>MySQL</span><span>AWS</span><span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NYC DOB -->
+        <div class="timeline-item">
+          <div class="timeline-logo-col">
+            <img src="./assets/nyc_logo.jpg" alt="NYC DOB" class="timeline-logo" />
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">
+                <h2>System Production Support Intern</h2>
+                <p class="timeline-company">NYC Department of Buildings | Broadway, NYC</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">📅 Jan 2022 – Jun 2022</span>
+                <span class="timeline-type intern">Internship</span>
+              </div>
+            </div>
+            <p class="timeline-summary">Developed data tracking and system performance monitoring solutions using Python, SQL, Power BI, and Power Automate.</p>
+            <ul class="timeline-bullets">
+              <li>Used <strong>Pandas, NumPy, Matplotlib</strong> for complex data processing and visualization.</li>
+              <li>Developed and optimized SQL queries for efficient data extraction and reporting.</li>
+              <li>Automated workflows using <strong>Power BI</strong> and <strong>Power Automate</strong>.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span><span>Power BI</span><span>Power Automate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lehman -->
+        <div class="timeline-item">
+          <div class="timeline-logo-col">
+            <img src="./assets/lehman-logo.png" alt="Lehman College" class="timeline-logo" />
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">
+                <h2>Support Tech Team Member</h2>
+                <p class="timeline-company">Herbert H Lehman College (CUNY) | Bronx, NYC</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">📅 Aug 2021 – Jan 2022</span>
+                <span class="timeline-type intern">Part-time</span>
+              </div>
+            </div>
+            <p class="timeline-summary">Provided classroom technology support to faculty for HyFlex learning environments.</p>
+            <ul class="timeline-bullets">
+              <li>Supported AV systems including microphones, cameras, and audio/video equipment.</li>
+              <li>Diagnosed and resolved hardware and software issues with minimal class disruption.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Windows</span><span>macOS</span><span>Zoom</span><span>Microsoft Teams</span><span>Blackboard LMS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#skills'" />
     </section>
 
     <!-- Skills -->
     <section id="skills">
       <p class="section__text__p1">Check Out My</p>
       <h1 class="title">Skills</h1>
+      <div class="skills-grid">
 
-      <div class="skills-details-container">
-
-        <div class="skill-category">
-          <h2 class="skills-sub-title">Core Languages</h2>
-          <ul class="skills-list">
-            <li><strong>Java</strong> (Spring Boot, microservices)</li>
-            <li><strong>Python</strong> (LLM tooling, pipelines)</li>
-            <li>TypeScript / JavaScript</li>
-            <li>SQL</li>
-            <li>HTML5 / CSS3</li>
-          </ul>
+        <div class="skill-card">
+          <div class="skill-card-header"><span class="skill-icon">🤖</span><h3>AI & LLM Engineering</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">LLM Integration</span><span class="skill-tag hot">RAG Pipelines</span>
+            <span class="skill-tag hot">LangChain</span><span class="skill-tag hot">LangGraph</span>
+            <span class="skill-tag hot">Anthropic Claude API</span><span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">Embeddings</span><span class="skill-tag">Semantic Search</span>
+            <span class="skill-tag">Prompt Engineering</span><span class="skill-tag">ChromaDB</span>
+            <span class="skill-tag">AI Agents</span><span class="skill-tag">Structured Outputs</span>
+          </div>
         </div>
 
-        <div class="skill-category">
-          <h2 class="skills-sub-title">Backend & Frameworks</h2>
-          <ul class="skills-list">
-            <li>Spring Boot / Spring MVC</li>
-            <li>Spring Data JPA / Hibernate</li>
-            <li>REST APIs • Microservices</li>
-            <li>React.js • Next.js</li>
-          </ul>
+        <div class="skill-card">
+          <div class="skill-card-header"><span class="skill-icon">💻</span><h3>Languages</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Java (JDK 21)</span><span class="skill-tag hot">Python</span>
+            <span class="skill-tag">TypeScript</span><span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+          </div>
         </div>
 
-        <div class="skill-category">
-          <h2 class="skills-sub-title">AI / LLM Engineering</h2>
-          <ul class="skills-list">
-            <li>LLM Application Development</li>
-            <li>Retrieval-Augmented Generation (RAG)</li>
-            <li>Embeddings • Semantic Search</li>
-            <li>Vector Databases / Vector Search</li>
-            <li>LangChain (RAG pipelines & orchestration)</li>
-            <li>Prompting • Output Validation (Structured Responses)</li>
-            <li>Inference Workflows • Latency Optimization</li>
-          </ul>
+        <div class="skill-card">
+          <div class="skill-card-header"><span class="skill-icon">⚙️</span><h3>Backend & Frameworks</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">Spring Boot</span><span class="skill-tag hot">Flask</span>
+            <span class="skill-tag">Spring MVC</span><span class="skill-tag">Spring Data JPA</span>
+            <span class="skill-tag">Hibernate</span><span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Microservices</span><span class="skill-tag">React.js</span><span class="skill-tag">Next.js</span>
+          </div>
         </div>
 
-        <div class="skill-category">
-          <h2 class="skills-sub-title">Cloud, DevOps & Tooling</h2>
-          <ul class="skills-list">
-            <li>AWS (cloud deployments)</li>
-            <li>GCP (cloud workflows)</li>
-            <li>CI/CD • Jenkins • GitHub</li>
-            <li>Docker • Kubernetes (basics)</li>
-            <li>Swagger / OpenAPI • Postman</li>
-            <li>Monitoring / Observability (metrics & reliability)</li>
-            <li>Agile / Scrum</li>
-          </ul>
+        <div class="skill-card">
+          <div class="skill-card-header"><span class="skill-icon">☁️</span><h3>Cloud & DevOps</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag hot">AWS (EC2, S3, RDS, Lambda)</span><span class="skill-tag">GCP</span>
+            <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Jenkins</span><span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span><span class="skill-tag">Render</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header"><span class="skill-icon">🗄️</span><h3>Databases</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span><span class="skill-tag">Oracle DB</span>
+            <span class="skill-tag">MongoDB</span><span class="skill-tag">Redis</span>
+            <span class="skill-tag hot">ChromaDB (Vector)</span><span class="skill-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-header"><span class="skill-icon">🛠️</span><h3>Tools & Practices</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span><span class="skill-tag">Postman</span>
+            <span class="skill-tag">Swagger / OpenAPI</span><span class="skill-tag">Jira</span>
+            <span class="skill-tag">Agile / Scrum</span><span class="skill-tag">TDD</span>
+            <span class="skill-tag">Observability</span><span class="skill-tag">VS Code</span>
+          </div>
         </div>
 
       </div>
-
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
 
     <!-- Projects -->
@@ -319,136 +351,250 @@
       <p class="section__text__p1">Browse My</p>
       <h1 class="title">Projects</h1>
 
-      <div class="experience-details-container">
-        <div class="about-containers">
+      <div class="ai-projects-label">
+        <span class="ai-badge">🤖 AI Projects</span>
+      </div>
 
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">UIGen Platform (Meta)</h2>
-            <p><strong>Role:</strong> Software Engineer – AI & LLM Systems</p>
-            <p><strong>Summary:</strong> Internal platform enabling teams to deploy, run, and monitor AI-enabled services.</p>
-            <ul>
-              <li>Built Spring Boot services and API contracts supporting inference and platform workflows.</li>
-              <li>Applied RAG-style retrieval + vector search patterns for grounded responses and better relevance.</li>
-              <li>Automated delivery via CI/CD and improved reliability with monitoring + incident troubleshooting.</li>
-            </ul>
+      <div class="ai-projects-grid">
+
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/Sho Ai.png" alt="SHO.AI" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://shourav5000.github.io/sho-ai" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/sho-ai" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
           </div>
-
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">USPS Admin Portal & SuperAdmin</h2>
-            <p><strong>Role:</strong> Software Engineer (Backend)</p>
-            <p><strong>Summary:</strong> Admin tools supporting internal operations and workflow management.</p>
-            <ul>
-              <li>Enhanced Java backend services and REST APIs for administrative workflows.</li>
-              <li>Improved stability and performance through refactoring, debugging, and production support.</li>
-              <li>Delivered maintainable features aligned with stakeholder needs in iterative releases.</li>
-            </ul>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">SHO.AI — Autonomous AI Agent</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">A full-stack autonomous AI agent powered by Claude Opus and LangGraph's ReAct architecture. Autonomously selects from 6 tools — web search, weather, news, Wikipedia, calculator, and image recognition.</p>
+            <div class="ai-project-features">
+              <span>🔍 Web Search</span><span>🌤️ Weather</span><span>🖼️ Vision</span>
+              <span>🎤 Voice</span><span>💾 Memory</span><span>⚡ Streaming</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>Flask</span><span>LangGraph</span><span>Claude Opus</span><span>React</span><span>Render</span>
+            </div>
           </div>
+        </div>
 
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">LLM + RAG Playground (Personal)</h2>
-            <p><strong>Role:</strong> Builder</p>
-            <p><strong>Summary:</strong> Hands-on experimentation with RAG pipelines, vector search, and evaluation.</p>
-            <ul>
-              <li>Designed ingestion → chunking → embeddings → retrieval → answer generation flow.</li>
-              <li>Explored LangChain orchestration patterns and response grounding strategies.</li>
-              <li>Focused on latency, quality, and safe/structured outputs.</li>
-            </ul>
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/RAG_Document.png" alt="RAG Document AI" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://shourav5000.github.io/rag-system" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/rag-system" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
           </div>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">RAG Document AI</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">Upload any PDF and ask questions using a full RAG pipeline. Built with LangChain LCEL, ChromaDB vector store, and Anthropic Claude as the LLM. Returns answers with source citations.</p>
+            <div class="ai-project-features">
+              <span>📄 PDF Upload</span><span>🔢 Vector Search</span>
+              <span>📖 Source Citations</span><span>🧠 Semantic Search</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Claude API</span><span>React</span><span>Flask</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/AI_CHAT_BOT.png" alt="AI Chatbot" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://shourav5000.github.io/ai-chatbot" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/ai-chatbot" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">AI Chatbot — LLM Integration</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">A full-stack luxury fashion AI chatbot with a secure Python Flask backend and React frontend. Features prompt engineering, stateful conversation memory, and secure API key management.</p>
+            <div class="ai-project-features">
+              <span>💬 Conversation Memory</span><span>🔐 Secure API</span>
+              <span>👗 Style Assistant</span><span>⚡ Real-time</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>Flask</span><span>Claude API</span><span>React</span><span>GitHub Pages</span><span>Render</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ai-projects-label" style="margin-top:3rem;">
+        <span class="ai-badge work">💼 Work Projects</span>
+      </div>
+
+      <div class="work-projects-grid">
+        <div class="work-project-card">
+          <div class="work-project-header">
+            <img src="./assets/meta-logo.jpg" alt="Meta" class="work-logo" />
+            <div>
+              <h2 class="work-project-title">UIGen Platform</h2>
+              <p class="work-project-company">Meta (Facebook) — AI & LLM Systems</p>
+            </div>
+          </div>
+          <p class="work-project-desc">Internal AI platform enabling engineering teams to deploy, run, and monitor ML models in production. Built Java/Spring Boot microservices with RAG-style retrieval and vector search for grounded, hallucination-resistant responses.</p>
+          <div class="work-project-highlights">
+            <div class="work-highlight"><span class="highlight-icon">🤖</span><span>LLM productionization & inference APIs</span></div>
+            <div class="work-highlight"><span class="highlight-icon">🔍</span><span>RAG + vector search integration</span></div>
+            <div class="work-highlight"><span class="highlight-icon">☁️</span><span>AWS/GCP deployment with CI/CD</span></div>
+            <div class="work-highlight"><span class="highlight-icon">📊</span><span>Model monitoring & performance tuning</span></div>
+          </div>
+          <div class="work-project-tech">
+            <span>Java</span><span>Spring Boot</span><span>Python</span><span>REST APIs</span>
+            <span>RAG</span><span>Vector Search</span><span>AWS</span><span>GCP</span><span>CI/CD</span>
+          </div>
+        </div>
+
+        <div class="work-project-card">
+          <div class="work-project-header">
+            <img src="./assets/usps-logo.jpg" alt="USPS" class="work-logo" />
+            <div>
+              <h2 class="work-project-title">Admin Portal & SuperAdmin</h2>
+              <p class="work-project-company">United States Postal Service — Backend Engineer</p>
+            </div>
+          </div>
+          <p class="work-project-desc">Development and enhancement of the USPS Admin Portal and SuperAdmin Functional Interface. Built scalable Java backend services on AWS EC2 with TypeScript/React frontend components for postal operations and administrative workflows.</p>
+          <div class="work-project-highlights">
+            <div class="work-highlight"><span class="highlight-icon">🏗️</span><span>Spring Boot microservices on AWS EC2</span></div>
+            <div class="work-highlight"><span class="highlight-icon">🖥️</span><span>TypeScript + React frontend components</span></div>
+            <div class="work-highlight"><span class="highlight-icon">🗄️</span><span>Oracle DB + Redis with JPA/Hibernate</span></div>
+            <div class="work-highlight"><span class="highlight-icon">🚀</span><span>CI/CD pipelines + Docker containerization</span></div>
+          </div>
+          <div class="work-project-tech">
+            <span>Java</span><span>Spring Boot</span><span>TypeScript</span><span>React.js</span>
+            <span>Oracle DB</span><span>Redis</span><span>Docker</span><span>AWS</span><span>Jenkins</span>
+          </div>
         </div>
       </div>
 
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'" />
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#education'" />
     </section>
 
     <!-- Education -->
     <section id="education" class="education-section">
       <p class="section__text__p1">My Background</p>
       <h1 class="title">Education</h1>
-
       <div class="edu-wrap">
         <div class="education-grid">
           <div class="edu-card">
             <div class="edu-icon">🎓</div>
             <div>
-              <h3>Master’s Degree</h3>
+              <h3>Master's Degree</h3>
               <p><strong>M.S. in Computer Science</strong> <span class="edu-muted">(AI & Machine Learning)</span></p>
+              <p style="font-size:0.85rem;color:#6366f1;margin-top:4px;">Colorado State University, Fort Collins</p>
+              <p style="font-size:0.8rem;color:rgb(100,100,110);">Sep 2024 – Jun 2026</p>
             </div>
           </div>
-
           <div class="edu-card">
             <div class="edu-icon">🎓</div>
             <div>
-              <h3>Bachelor’s Degree</h3>
+              <h3>Bachelor's Degree</h3>
               <p><strong>B.S. in Computer Science</strong></p>
+              <p style="font-size:0.85rem;color:#6366f1;margin-top:4px;">CUNY Lehman College, New York</p>
+              <p style="font-size:0.8rem;color:rgb(100,100,110);">Aug 2019 – May 2024</p>
             </div>
           </div>
         </div>
       </div>
-
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certification'" />
+      <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#certification'" />
     </section>
 
-    <!-- Certifications -->
-    <section id="certification" class="certification-section">
-      <p class="section__text__p1">Credentials</p>
-      <h1 class="title">Certifications</h1>
+  <section id="certification" class="certification-section">
+  <p class="section__text__p1">Credentials</p>
+  <h1 class="title">Certifications</h1>
 
-      <div class="cert-wrap">
-        <div class="cert-feature">
-          <button class="cert-thumb" type="button" data-modal-img="./assets/Bachelors Of Science in Computer Scienc.jpg">
-            <img
-              src="./assets/Bachelors Of Science in Computer Scienc.jpg"
-              alt="Bachelors of Science in Computer Science certificate"
-            />
-            <span class="cert-thumb__hint">Click to preview</span>
-          </button>
+  <div class="cert-grid">
 
-          <div class="cert-feature__text">
-            <h2>B.S. in Computer Science (Lehman College, CUNY)</h2>
-            <p>Foundational training in software engineering, data structures, systems, and web development.</p>
-          </div>
+    <!-- Degree Certificate -->
+    <div class="cert-main-card">
+      <div class="cert-main-img">
+        <button class="cert-thumb" type="button" data-modal-img="./assets/Bachelors Of Science in Computer Scienc.jpg">
+          <img src="./assets/Bachelors Of Science in Computer Scienc.jpg" alt="BS Certificate" />
+          <div class="cert-zoom-hint">🔍 Click to preview</div>
+        </button>
+      </div>
+      <div class="cert-main-info">
+        <div class="cert-badge-row">
+          <span class="cert-badge degree">🎓 Degree</span>
+          <span class="cert-badge verified">✓ Official</span>
         </div>
-
-        <div class="cert-row">
-          <h2 class="cert-row__title">HackerRank Skill Certifications</h2>
-
-          <div class="cert-scroll" aria-label="Scrollable certification list">
-            <div class="cert-card">
-              <div class="cert-card__top">
-                <h3>Java Certification</h3>
-                <p>HackerRank Skill Test</p>
-              </div>
-              <a class="cert-btn" href="./assets/java_basic certificate.pdf" target="_blank" rel="noopener">View PDF</a>
-            </div>
-
-            <div class="cert-card">
-              <div class="cert-card__top">
-                <h3>JavaScript Certification</h3>
-                <p>HackerRank Skill Test</p>
-              </div>
-              <a class="cert-btn" href="./assets/javascript_basic certificate.pdf" target="_blank" rel="noopener">View PDF</a>
-            </div>
-
-            <div class="cert-card">
-              <div class="cert-card__top">
-                <h3>SQL Certification</h3>
-                <p>HackerRank Skill Test</p>
-              </div>
-              <a class="cert-btn" href="./assets/sql_intermediate certificate.pdf" target="_blank" rel="noopener">View PDF</a>
-            </div>
-          </div>
+        <h2>B.S. in Computer Science</h2>
+        <p class="cert-institution">Lehman College, CUNY — New York</p>
+        <p class="cert-desc">Foundational training in software engineering, data structures, algorithms, systems design, and web development. Graduated May 2024.</p>
+        <div class="cert-skills">
+          <span>Data Structures</span>
+          <span>Algorithms</span>
+          <span>Systems Design</span>
+          <span>Web Development</span>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Modal for certificate preview -->
+    <!-- HackerRank Cards -->
+    <div class="cert-sub-section">
+      <div class="cert-sub-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank" class="cert-platform-logo" onerror="this.style.display='none'" />
+        <div>
+          <h3>HackerRank Skill Certifications</h3>
+          <p>Verified technical skill assessments</p>
+        </div>
+      </div>
+
+      <div class="cert-cards-row">
+
+        <div class="cert-skill-card">
+          <div class="cert-skill-icon java">☕</div>
+          <div class="cert-skill-info">
+            <h4>Java</h4>
+            <p>Basic Certification</p>
+            <span class="cert-level">Skill Verified</span>
+          </div>
+          <a class="cert-view-btn" href="./assets/java_basic certificate.pdf" target="_blank">View PDF ↗</a>
+        </div>
+
+        <div class="cert-skill-card">
+          <div class="cert-skill-icon js">JS</div>
+          <div class="cert-skill-info">
+            <h4>JavaScript</h4>
+            <p>Basic Certification</p>
+            <span class="cert-level">Skill Verified</span>
+          </div>
+          <a class="cert-view-btn" href="./assets/javascript_basic certificate.pdf" target="_blank">View PDF ↗</a>
+        </div>
+
+        <div class="cert-skill-card">
+          <div class="cert-skill-icon sql">🗄️</div>
+          <div class="cert-skill-info">
+            <h4>SQL</h4>
+            <p>Intermediate Certification</p>
+            <span class="cert-level cert-level-mid">Intermediate</span>
+          </div>
+          <a class="cert-view-btn" href="./assets/sql_intermediate certificate.pdf" target="_blank">View PDF ↗</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Modal -->
     <div class="modal" id="imgModal" aria-hidden="true">
       <div class="modal__backdrop" data-close-modal="true"></div>
-      <div class="modal__content" role="dialog" aria-modal="true" aria-label="Certificate preview">
-        <button class="modal__close" type="button" data-close-modal="true" aria-label="Close preview">
-          ✕
-        </button>
+      <div class="modal__content" role="dialog" aria-modal="true">
+        <button class="modal__close" type="button" data-close-modal="true">✕</button>
         <img id="modalImg" src="" alt="Certificate preview" />
       </div>
     </div>
@@ -457,15 +603,13 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon" />
           <p><a href="mailto:shourav.mandal@gmail.com">shourav.mandal@gmail.com</a></p>
         </div>
-
         <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
           <p><a href="https://www.linkedin.com/in/shouravkm/">LinkedIn</a></p>
         </div>
       </div>
@@ -486,7 +630,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Shourav Mandal. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Shourav Mandal. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

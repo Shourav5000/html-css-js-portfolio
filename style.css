@@ -634,3 +634,11 @@ footer p { text-align: center; }
   .cert-main-img { height: 200px; }
   .cert-cards-row { grid-template-columns: 1fr; }
 }
+
+@media screen and (max-width: 600px) {
+  .hero-btn-row .btn {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+  }
+}

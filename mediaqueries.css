@@ -77,4 +77,12 @@
   .hero-tags { justify-content: center; }
   .cert-cards-row { grid-template-columns: 1fr; }
   #socials-container { justify-content: center; }
+  .hero-actions { align-items: center; width: 100%; }
+  .hero-btn-row { justify-content: center; width: 100%; }
+  .hero-social-row { justify-content: center; width: 100%; }
+  .hero-tags { justify-content: center; }
+  .section__text { text-align: center; }
+  .section__text__p1 { text-align: center; }
+  .section__text__p2 { text-align: center; }
+  .btn { min-width: 130px; }
 }

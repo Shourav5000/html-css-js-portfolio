@@ -192,14 +192,16 @@ section { padding-top: 4vh; height: auto !important; min-height: fit-content; ma
 .hero-actions {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-top: 0.5rem;
+  width: 100%;
 }
 
 .hero-btn-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 0.75rem;
   align-items: center;
   width: 100%;
@@ -208,6 +210,7 @@ section { padding-top: 4vh; height: auto !important; min-height: fit-content; ma
 .hero-social-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 0.75rem;
   align-items: center;
   width: 100%;

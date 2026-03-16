@@ -20,7 +20,45 @@ a:hover { color: grey; text-decoration: underline; text-underline-offset: 1rem; 
 .hamburger-menu { position: relative; display: inline-block; }
 .hamburger-icon { display: flex; flex-direction: column; justify-content: space-between; height: 24px; width: 30px; cursor: pointer; }
 .hamburger-icon span { width: 100%; height: 2px; background-color: black; transition: all 0.3s ease-in-out; }
-.menu-links { position: absolute; top: 100%; right: 0; background-color: white; width: fit-content; max-height: 0; overflow: hidden; transition: all 0.3s ease-in-out; list-style: none; padding: 0.5rem 0; border: 1px solid rgb(230,230,230); border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+.menu-links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  max-width: 280px;
+  height: 100vh;
+  background-color: white;
+  max-height: none;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  list-style: none;
+  padding: 5rem 1rem 2rem;
+  border-left: 1px solid rgb(230,230,230);
+  box-shadow: -8px 0 24px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.menu-links.open {
+  transform: translateX(0);
+  max-height: none;
+}
+
+.menu-links a {
+  display: block;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #1e1b4b;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.menu-links a:hover {
+  background: #eef2ff;
+  color: #6366f1;
+  text-decoration: none;
+}
 .menu-links a { display: block; padding: 10px; text-align: center; font-size: 1.5rem; color: black; transition: all 0.3s ease-in-out; }
 .menu-links li { list-style: none; }
 .menu-links.open { max-height: 400px; }

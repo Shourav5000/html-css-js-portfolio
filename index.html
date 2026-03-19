@@ -23,61 +23,60 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-<!-- Mobile Nav -->
-<nav id="hamburger-nav">
-  <div class="logo">Shourav Mandal</div>
-  <div class="hamburger-menu">
-    <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="menu-links">
-      <li><a href="#about" onclick="toggleMenu()">About</a></li>
-      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-      <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-      <li><a href="#certification" onclick="toggleMenu()">Certification</a></li>
-      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
-<section id="profile">
-  <div class="section__pic-container">
-    <img src="./assets/profile-pic.jpg" alt="Shourav Mandal" />
-  </div>
-
-  <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">Shourav Mandal</h1>
-    <p class="section__text__p2">
-      AI-focused Software Engineer building intelligent systems with Java, Python, and cutting-edge LLM technology.
-    </p>
-
-    <div class="hero-tags">
-      <span class="hero-tag">🤖 AI & LLM Systems</span>
-      <span class="hero-tag">🔍 RAG & Vector Search</span>
-      <span class="hero-tag">☕ Java & Spring Boot</span>
-      <span class="hero-tag">🐍 Python & Flask</span>
-      <span class="hero-tag">☁️ AWS & GCP</span>
-    </div>
-
-    <div class="hero-actions">
-      <div class="hero-btn-row">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Resume - Shourav Mandal.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-      </div>
-      <div class="hero-social-row">
-        <div class="social-icon-wrap" onclick="location.href='https://www.linkedin.com/in/shouravkm/'">
-          <img src="./assets/linkedin.png" alt="LinkedIn" />
+    <!-- Mobile Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Shourav Mandal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
         </div>
-        <div class="social-icon-wrap" onclick="location.href='https://github.com/Shourav5000'">
-          <img src="./assets/github.png" alt="GitHub" />
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#certification" onclick="toggleMenu()">Certification</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Profile / Hero -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Shourav Mandal" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Shourav Mandal</h1>
+        <p class="section__text__p2">
+          AI-focused Software Engineer building intelligent systems with Java, Python, and cutting-edge LLM technology.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">🤖 AI & LLM Systems</span>
+          <span class="hero-tag">🔍 RAG & Vector Search</span>
+          <span class="hero-tag">☕ Java & Spring Boot</span>
+          <span class="hero-tag">🐍 Python & Flask</span>
+          <span class="hero-tag">☁️ AWS & GCP</span>
+        </div>
+        <div class="hero-actions">
+          <div class="hero-btn-row">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Resume - Shourav Mandal.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+          </div>
+          <div class="hero-social-row">
+            <div class="social-icon-wrap" onclick="location.href='https://www.linkedin.com/in/shouravkm/'">
+              <img src="./assets/linkedin.png" alt="LinkedIn" />
+            </div>
+            <div class="social-icon-wrap" onclick="location.href='https://github.com/Shourav5000'">
+              <img src="./assets/github.png" alt="GitHub" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- About -->
     <section id="about">
@@ -145,15 +144,17 @@
             </div>
             <p class="timeline-summary">Contributed to the <strong>UIGen platform</strong> — Meta's internal AI-enabled service for deploying and administering ML models in production. Built Java/Spring Boot microservices, implemented RAG-style retrieval patterns, and deployed AI systems on AWS/GCP.</p>
             <ul class="timeline-bullets">
-              <li>Transformed ML models from data science teams into production-ready UIGen platform services.</li>
-              <li>Designed and maintained <strong>Java/Spring Boot</strong> microservices and <strong>REST APIs</strong> supporting AI-driven workflows and model inference.</li>
-              <li>Implemented <strong>RAG-style retrieval</strong> (document ingestion → embeddings → vector search → grounded responses) to reduce hallucinations.</li>
-              <li>Partnered with data scientists to operationalize models, monitor drift, and tune latency/throughput.</li>
-              <li>Deployed scalable AI systems on <strong>AWS</strong> and <strong>GCP</strong> with CI/CD automation and observability best practices.</li>
+              <li>Transformed ML models from data science teams into production-ready UIGen platform services deployed across internal Meta teams.</li>
+              <li>Designed and implemented <strong>Java/Spring Boot</strong> microservices and <strong>REST APIs</strong> supporting LLM-powered features, model inference pipelines, and administrative workflows on AWS.</li>
+              <li>Deployed and maintained scalable AI systems on AWS, achieving <strong>99%+ uptime</strong> and ensuring high availability under real-world production load.</li>
+              <li>Troubleshot production issues and monitored model performance, reducing inference latency by <strong>20–30%</strong>.</li>
+              <li>Created CI/CD pipelines for AI-enabled Java applications, accelerating deployment speed by <strong>20–30%</strong>.</li>
+              <li>Integrated LangChain and Meta AI (LLaMA) to enhance platform performance and inference reliability.</li>
+              <li>Collaborated with engineers, data scientists, and product owners across a team of <strong>10+</strong> to align UIGen capabilities with operational and business objectives.</li>
             </ul>
             <div class="timeline-tech">
               <span>Java</span><span>Spring Boot</span><span>Python</span><span>REST APIs</span>
-              <span>RAG</span><span>Vector Search</span><span>AWS</span><span>GCP</span><span>CI/CD</span><span>Jenkins</span>
+              <span>RAG</span><span>LangChain</span><span>Meta AI (LLaMA)</span><span>AWS</span><span>GCP</span><span>CI/CD</span><span>Jenkins</span>
             </div>
           </div>
         </div>
@@ -175,9 +176,10 @@
                 <span class="timeline-type contract">Contract</span>
               </div>
             </div>
-            <p class="timeline-summary">Developed and enhanced the <strong>USPS Admin Portal</strong> and SuperAdmin Functional Interface — internal tools for postal operations, label design, and administrative workflows.</p>
+            <p class="timeline-summary">Led development and enhancement of the <strong>USPS Admin Portal</strong> and SuperAdmin Functional Interface — internal tools for postal operations, label design, and administrative workflows.</p>
             <ul class="timeline-bullets">
-              <li>Developed scalable <strong>Java/Spring Boot</strong> backend services and REST APIs deployed on <strong>AWS EC2</strong>.</li>
+              <li>Developed and maintained scalable, secure <strong>Java/Spring Boot</strong> backend services to meet evolving business and operational requirements.</li>
+              <li>Deployed Spring Boot microservices on <strong>AWS EC2</strong>, implementing RESTful APIs for environment-specific data retrieval and system integration.</li>
               <li>Built dynamic frontend components using <strong>TypeScript</strong>, HTML5, CSS3, and <strong>React.js/Next.js</strong>.</li>
               <li>Managed database interactions using <strong>JPA/Hibernate</strong> with Oracle (relational) and Redis (NoSQL).</li>
               <li>Containerized applications using <strong>Docker</strong> and maintained CI/CD pipelines via Jenkins on AWS (S3, EC2).</li>
@@ -207,12 +209,12 @@
                 <span class="timeline-type intern">Internship</span>
               </div>
             </div>
-            <p class="timeline-summary">Created a web-based healthcare data management solution, improving query performance, UI/UX, and data security for medical professionals.</p>
+            <p class="timeline-summary">Developed a web-based healthcare management platform to enhance data querying and operational workflows for medical professionals.</p>
             <ul class="timeline-bullets">
-              <li>Built frontend and backend components using <strong>RESTful APIs</strong> and microservices architecture.</li>
-              <li>Enhanced SQL queries and database interactions to boost data retrieval performance.</li>
-              <li>Implemented data validation to prevent SQL injection and security vulnerabilities.</li>
-              <li>Redesigned the homepage with <strong>UI/UX best practices</strong> improving user engagement.</li>
+              <li>Built frontend and Java backend components using <strong>RESTful APIs</strong> and microservices architecture, ensuring seamless UI-to-service integration.</li>
+              <li>Optimized SQL queries and database interactions to boost data retrieval performance with minimal latency.</li>
+              <li>Implemented data validation and sanitization methods to mitigate SQL injection risks and strengthen platform security.</li>
+              <li>Redesigned the homepage applying <strong>UI/UX best practices</strong>, improving engagement among medical professionals.</li>
             </ul>
             <div class="timeline-tech">
               <span>Java</span><span>JavaScript</span><span>REST APIs</span><span>SQL</span><span>MySQL</span><span>AWS</span><span>GitHub</span>
@@ -239,8 +241,8 @@
             </div>
             <p class="timeline-summary">Developed data tracking and system performance monitoring solutions using Python, SQL, Power BI, and Power Automate.</p>
             <ul class="timeline-bullets">
-              <li>Used <strong>Pandas, NumPy, Matplotlib</strong> for complex data processing and visualization.</li>
-              <li>Developed and optimized SQL queries for efficient data extraction and reporting.</li>
+              <li>Built data processing and visualization pipelines using <strong>Pandas, NumPy, Matplotlib</strong> to support reporting workflows.</li>
+              <li>Developed and optimized SQL queries for large dataset extraction, improving report generation efficiency.</li>
               <li>Automated workflows using <strong>Power BI</strong> and <strong>Power Automate</strong>.</li>
             </ul>
             <div class="timeline-tech">
@@ -267,8 +269,8 @@
             </div>
             <p class="timeline-summary">Provided classroom technology support to faculty for HyFlex learning environments.</p>
             <ul class="timeline-bullets">
-              <li>Supported AV systems including microphones, cameras, and audio/video equipment.</li>
-              <li>Diagnosed and resolved hardware and software issues with minimal class disruption.</li>
+              <li>Supported AV systems including microphones, cameras, and audio/video equipment before and after courses.</li>
+              <li>Diagnosed and resolved hardware and software issues for educators, ensuring minimal disruption to classroom activities.</li>
             </ul>
             <div class="timeline-tech">
               <span>Windows</span><span>macOS</span><span>Zoom</span><span>Microsoft Teams</span><span>Blackboard LMS</span>
@@ -515,84 +517,121 @@
       <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#certification'" />
     </section>
 
-  <section id="certification" class="certification-section">
-  <p class="section__text__p1">Credentials</p>
-  <h1 class="title">Certifications</h1>
+        <!-- Certifications -->
+    <section id="certification" class="certification-section">
+      <p class="section__text__p1">Credentials</p>
+      <h1 class="title">Certifications</h1>
+      <div class="cert-grid">
 
-  <div class="cert-grid">
-
-    <!-- Degree Certificate -->
-    <div class="cert-main-card">
-      <div class="cert-main-img">
-        <button class="cert-thumb" type="button" data-modal-img="./assets/Bachelors Of Science in Computer Scienc.jpg">
-          <img src="./assets/Bachelors Of Science in Computer Scienc.jpg" alt="BS Certificate" />
-          <div class="cert-zoom-hint">🔍 Click to preview</div>
-        </button>
-      </div>
-      <div class="cert-main-info">
-        <div class="cert-badge-row">
-          <span class="cert-badge degree">🎓 Degree</span>
-          <span class="cert-badge verified">✓ Official</span>
-        </div>
-        <h2>B.S. in Computer Science</h2>
-        <p class="cert-institution">Lehman College, CUNY — New York</p>
-        <p class="cert-desc">Foundational training in software engineering, data structures, algorithms, systems design, and web development. Graduated May 2024.</p>
-        <div class="cert-skills">
-          <span>Data Structures</span>
-          <span>Algorithms</span>
-          <span>Systems Design</span>
-          <span>Web Development</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- HackerRank Cards -->
-    <div class="cert-sub-section">
-      <div class="cert-sub-header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank" class="cert-platform-logo" onerror="this.style.display='none'" />
-        <div>
-          <h3>HackerRank Skill Certifications</h3>
-          <p>Verified technical skill assessments</p>
-        </div>
-      </div>
-
-      <div class="cert-cards-row">
-
-        <div class="cert-skill-card">
-          <div class="cert-skill-icon java">☕</div>
-          <div class="cert-skill-info">
-            <h4>Java</h4>
-            <p>Basic Certification</p>
-            <span class="cert-level">Skill Verified</span>
+        <!-- BS Degree - full width -->
+        <div class="cert-main-card" style="grid-column: 1 / -1;">
+          <div class="cert-main-img">
+            <button class="cert-thumb" type="button" data-modal-img="./assets/Bachelors Of Science in Computer Scienc.jpg">
+              <img src="./assets/Bachelors Of Science in Computer Scienc.jpg" alt="BS Certificate" />
+              <div class="cert-zoom-hint">🔍 Click to preview</div>
+            </button>
           </div>
-          <a class="cert-view-btn" href="./assets/java_basic certificate.pdf" target="_blank">View PDF ↗</a>
+          <div class="cert-main-info">
+            <div class="cert-badge-row">
+              <span class="cert-badge degree">🎓 Degree</span>
+              <span class="cert-badge verified">✓ Official</span>
+            </div>
+            <h2>B.S. in Computer Science</h2>
+            <p class="cert-institution">Lehman College, CUNY — New York</p>
+            <p class="cert-desc">Foundational training in software engineering, data structures, algorithms, systems design, and web development. Graduated May 2024.</p>
+            <div class="cert-skills">
+              <span>Data Structures</span>
+              <span>Algorithms</span>
+              <span>Systems Design</span>
+              <span>Web Development</span>
+            </div>
+          </div>
         </div>
 
-        <div class="cert-skill-card">
-          <div class="cert-skill-icon js">JS</div>
-          <div class="cert-skill-info">
-            <h4>JavaScript</h4>
-            <p>Basic Certification</p>
-            <span class="cert-level">Skill Verified</span>
+        <!-- Google Section -->
+        <div class="cert-sub-section">
+          <div class="cert-sub-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="cert-platform-logo" style="height:24px;width:auto;" onerror="this.style.display='none'" />
+            <div>
+              <h3>Google Certifications</h3>
+              <p>Professional certificates via Coursera — Mar 2026</p>
+            </div>
           </div>
-          <a class="cert-view-btn" href="./assets/javascript_basic certificate.pdf" target="_blank">View PDF ↗</a>
+          <div class="cert-cards-row">
+
+            <!-- Google AI Professional -->
+            <div class="cert-skill-card">
+              <button class="cert-thumb" type="button" data-modal-img="./assets/AI.png" style="all:unset;cursor:pointer;display:block;border-radius:8px;overflow:hidden;position:relative;">
+                <img src="./assets/AI.png" alt="Google AI Professional Certificate" style="width:100%;display:block;border-radius:8px;" />
+                <div class="cert-zoom-hint" style="border-radius:8px;">🔍 Preview</div>
+              </button>
+              <div class="cert-skill-info" style="margin-top:0.6rem;">
+                <h4>Google AI Professional</h4>
+                <p>7-Course Professional Certificate</p>
+                <span class="cert-level">Professional</span>
+              </div>
+              <a class="cert-view-btn" href="https://coursera.org/verify/professional-cert/EYUZJ7P4T633" target="_blank">Verify ↗</a>
+            </div>
+
+            <!-- AI for App Building -->
+            <div class="cert-skill-card">
+              <button class="cert-thumb" type="button" data-modal-img="./assets/AI2.png" style="all:unset;cursor:pointer;display:block;border-radius:8px;overflow:hidden;position:relative;">
+                <img src="./assets/AI2.png" alt="AI for App Building Certificate" style="width:100%;display:block;border-radius:8px;" />
+                <div class="cert-zoom-hint" style="border-radius:8px;">🔍 Preview</div>
+              </button>
+              <div class="cert-skill-info" style="margin-top:0.6rem;">
+                <h4>AI for App Building</h4>
+                <p>Google — via Coursera</p>
+                <span class="cert-level">Course Complete</span>
+              </div>
+              <a class="cert-view-btn" href="https://coursera.org/verify/WNJG3325J6LL" target="_blank">Verify ↗</a>
+            </div>
+
+          </div>
         </div>
 
-        <div class="cert-skill-card">
-          <div class="cert-skill-icon sql">🗄️</div>
-          <div class="cert-skill-info">
-            <h4>SQL</h4>
-            <p>Intermediate Certification</p>
-            <span class="cert-level cert-level-mid">Intermediate</span>
+        <!-- HackerRank Section -->
+        <div class="cert-sub-section">
+          <div class="cert-sub-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank" class="cert-platform-logo" onerror="this.style.display='none'" />
+            <div>
+              <h3>HackerRank Skill Certifications</h3>
+              <p>Verified technical skill assessments</p>
+            </div>
           </div>
-          <a class="cert-view-btn" href="./assets/sql_intermediate certificate.pdf" target="_blank">View PDF ↗</a>
+          <div class="cert-cards-row">
+            <div class="cert-skill-card">
+              <div class="cert-skill-icon java">☕</div>
+              <div class="cert-skill-info">
+                <h4>Java</h4>
+                <p>Basic Certification</p>
+                <span class="cert-level">Skill Verified</span>
+              </div>
+              <a class="cert-view-btn" href="./assets/java_basic certificate.pdf" target="_blank">View PDF ↗</a>
+            </div>
+            <div class="cert-skill-card">
+              <div class="cert-skill-icon js">JS</div>
+              <div class="cert-skill-info">
+                <h4>JavaScript</h4>
+                <p>Basic Certification</p>
+                <span class="cert-level">Skill Verified</span>
+              </div>
+              <a class="cert-view-btn" href="./assets/javascript_basic certificate.pdf" target="_blank">View PDF ↗</a>
+            </div>
+            <div class="cert-skill-card">
+              <div class="cert-skill-icon sql">🗄️</div>
+              <div class="cert-skill-info">
+                <h4>SQL</h4>
+                <p>Intermediate Certification</p>
+                <span class="cert-level cert-level-mid">Intermediate</span>
+              </div>
+              <a class="cert-view-btn" href="./assets/sql_intermediate certificate.pdf" target="_blank">View PDF ↗</a>
+            </div>
+          </div>
         </div>
 
       </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <!-- Modal -->
     <div class="modal" id="imgModal" aria-hidden="true">

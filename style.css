@@ -564,6 +564,18 @@ footer p { text-align: center; }
   margin-bottom: 1.25rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgb(235,235,245);
+  flex-wrap: wrap;
+}
+
+.cert-sub-header > div {
+  min-width: 0;
+  flex: 1;
+}
+
+.cert-sub-header h3 {
+  font-size: 1rem; font-weight: 700; color: #1e1b4b; margin: 0 0 2px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .cert-sub-header-icons {
@@ -591,7 +603,6 @@ footer p { text-align: center; }
   flex-shrink: 0;
 }
 
-.cert-sub-header h3 { font-size: 1rem; font-weight: 700; color: #1e1b4b; margin: 0 0 2px; }
 .cert-sub-header p { font-size: 0.8rem; color: rgb(100,100,110); margin: 0; }
 
 .cert-cards-row {

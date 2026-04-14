@@ -49,8 +49,16 @@
 
 @media screen and (max-width: 600px) {
   .cert-cards-row { grid-template-columns: 1fr; }
-  .cert-sub-header { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
-  .cert-sub-header-icons { flex-wrap: wrap; }
+  .cert-sub-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .cert-sub-header-icons {
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
   .cert-sub-header h3 { font-size: 0.95rem; }
   .cert-main-card { grid-template-columns: 1fr; }
   .cert-main-img { height: 180px; }

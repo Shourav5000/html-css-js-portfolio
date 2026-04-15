@@ -8,7 +8,10 @@ a, .btn { transition: all 300ms ease; }
 
 /* NAV */
 nav, .nav-links { display: flex; }
-nav { justify-content: space-around; align-items: center; height: 17vh; }
+nav {
+  justify-content: space-around;
+  align-items: center;
+}
 .nav-links { gap: 2rem; list-style: none; font-size: 1.5rem; }
 a { color: black; text-decoration: none; }
 a:hover { color: grey; text-decoration: underline; text-underline-offset: 1rem; text-decoration-color: rgb(181,181,181); }
@@ -688,5 +691,130 @@ footer p { text-align: center; }
     flex: 1;
     min-width: 0;
     text-align: center;
+  }
+}
+/* Sticky/floating navbar */
+#desktop-nav,
+#hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Prevent content from going under navbar */
+body {
+  padding-top: 80px;
+}
+
+/* Anchor links land properly */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Keep hero height nice */
+#profile {
+  min-height: calc(100vh - 80px);
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding-top: 72px;
+  }
+
+  #hamburger-nav {
+    height: 72px;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  #profile {
+    padding: 2rem 1rem 1.5rem;
+    min-height: auto;
+    gap: 1.5rem;
+  }
+
+  .section__text__p2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .hero-btn-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-btn-row .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-social-row {
+    margin-top: 0.25rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-tags {
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-actions {
+    gap: 0.75rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cert-sub-section {
+    padding: 1rem;
+  }
+
+  .cert-sub-header {
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .cert-sub-header-icons {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.45rem 0.6rem;
+  }
+
+  .cert-sub-header > div:last-child {
+    flex: 1 1 100%;
+  }
+
+  .cert-sub-header h3 {
+    margin-bottom: 0.2rem;
+  }
+
+  .cert-sub-header p {
+    line-height: 1.4;
+  }
+
+  .cert-cards-row {
+    margin-top: 0;
+    gap: 0.85rem;
+  }
+
+  .cert-skill-card {
+    padding: 0.85rem;
+  }
+
+  .cert-skill-card .cert-thumb img {
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
   }
 }

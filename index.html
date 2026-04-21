@@ -52,13 +52,13 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Shourav Mandal</h1>
         <p class="section__text__p2">
-          AI-focused Software Engineer building intelligent systems with Java, Python, and cutting-edge LLM technology.
+          AI-focused Software Engineer specializing in multi-agent orchestration, LangGraph, RAG pipelines, and production LLM systems at Meta.
         </p>
         <div class="hero-tags">
-          <span class="hero-tag">🤖 AI & LLM Systems</span>
+          <span class="hero-tag">🤖 Multi-Agent AI Systems</span>
+          <span class="hero-tag">🔗 LangGraph & LangChain</span>
           <span class="hero-tag">🔍 RAG & Vector Search</span>
           <span class="hero-tag">☕ Java & Spring Boot</span>
-          <span class="hero-tag">🐍 Python & Flask</span>
           <span class="hero-tag">☁️ AWS & GCP</span>
         </div>
         <div class="hero-actions">
@@ -89,17 +89,17 @@
           </div>
           <div class="about-stats">
             <div class="about-stat"><span class="stat-number">5+</span><span class="stat-label">Years Experience</span></div>
-            <div class="about-stat"><span class="stat-number">3</span><span class="stat-label">AI Projects Live</span></div>
+            <div class="about-stat"><span class="stat-number">4</span><span class="stat-label">AI Projects Live</span></div>
             <div class="about-stat"><span class="stat-number">3</span><span class="stat-label">Companies</span></div>
           </div>
         </div>
         <div class="about-right">
-          <p class="about-bio">I'm an <strong>AI-focused Software Engineer</strong> with 5+ years of experience building production-ready systems at <strong>Meta</strong> and <strong>USPS</strong>. I specialize in integrating <strong>Large Language Models (LLMs)</strong> into real products — designing secure backend APIs, implementing <strong>Retrieval-Augmented Generation (RAG)</strong> pipelines, and shipping reliable microservices on cloud infrastructure.</p>
-          <p class="about-bio" style="margin-top:0.75rem;">Recently I've built three fully deployed AI projects from scratch — an autonomous AI agent with web search and vision, a RAG document analysis system, and an LLM-powered chatbot — all live and available on my portfolio.</p>
+          <p class="about-bio">I'm an <strong>AI-focused Software Engineer</strong> with 5+ years of experience building production-ready systems at <strong>Meta</strong> and <strong>USPS</strong>. I specialize in <strong>multi-agent orchestration with LangGraph</strong>, RAG pipelines, and integrating <strong>Anthropic Claude and OpenAI APIs</strong> into real products — designing secure backend APIs and shipping reliable microservices on cloud infrastructure.</p>
+          <p class="about-bio" style="margin-top:0.75rem;">I've built and deployed four AI applications from scratch, with deep hands-on experience designing agentic AI workflows where specialized agents coordinate autonomously to complete complex, multi-step tasks in real time.</p>
           <div class="about-highlights">
             <div class="about-highlight-card">
               <span class="highlight-emoji">🤖</span>
-              <div><h4>AI & LLM Systems</h4><p>RAG pipelines, vector search, LangGraph agents, Claude API</p></div>
+              <div><h4>AI & LLM Systems</h4><p>Multi-agent orchestration, LangGraph, RAG pipelines, vector search, Anthropic Claude API, OpenAI API</p></div>
             </div>
             <div class="about-highlight-card">
               <span class="highlight-emoji">☕</span>
@@ -293,11 +293,15 @@
           <div class="skill-tags">
             <span class="skill-tag hot">LLM Integration</span><span class="skill-tag hot">RAG Pipelines</span>
             <span class="skill-tag hot">LangChain</span><span class="skill-tag hot">LangGraph</span>
-            <span class="skill-tag hot">Anthropic Claude API</span><span class="skill-tag hot">Vector Databases</span>
+            <span class="skill-tag hot">Multi-Agent Orchestration</span>
+            <span class="skill-tag hot">Anthropic Claude API</span><span class="skill-tag hot">OpenAI API</span>
+            <span class="skill-tag hot">Vector Databases</span>
             <span class="skill-tag hot">Pytorch</span><span class="skill-tag hot">Hugging Face Transformers</span>
             <span class="skill-tag">Embeddings</span><span class="skill-tag">Semantic Search</span>
             <span class="skill-tag">Prompt Engineering</span><span class="skill-tag">ChromaDB</span>
-            <span class="skill-tag">AI Agents</span><span class="skill-tag">Structured Outputs</span>
+            <span class="skill-tag">FAISS</span><span class="skill-tag">Tavily</span>
+            <span class="skill-tag">AI Agents</span><span class="skill-tag">SSE Streaming</span>
+            <span class="skill-tag">FastAPI</span><span class="skill-tag">Structured Outputs</span>
           </div>
         </div>
 
@@ -353,139 +357,113 @@
       <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
 
-  <!-- Projects -->
-<section id="projects">
-  <p class="section__text__p1">Browse My</p>
-  <h1 class="title">Projects</h1>
+    <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
 
-  <div class="ai-projects-label">
-    <span class="ai-badge">🤖 AI Projects</span>
-  </div>
+      <div class="ai-projects-label">
+        <span class="ai-badge">🤖 AI Projects</span>
+      </div>
 
-  <div class="ai-projects-grid">
+      <div class="ai-projects-grid">
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/therapist.png" alt="Therapist SHO.AI" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://therapist-sho-ai.onrender.com" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/therapist-sho-ai" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">Therapist @ SHO.AI — Mental Wellness AI</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">Full-stack AI mental wellness companion powered by Claude Sonnet 4.5, LangChain, and LangGraph. Multi-tool agent with real-time streaming, emotion detection, RAG-based journal search, breathing exercises, mood tracking, ambient sounds, voice I/O, and crisis detection. Deployed on Render with Docker — optimized memory from 1.5GB to under 200MB using TF-IDF in place of HuggingFace embeddings.</p>
+            <div class="ai-project-features">
+              <span>🧠 Emotion Detection</span><span>📓 Journal RAG</span>
+              <span>🎤 Voice I/O</span><span>🚨 Crisis Detection</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>Flask</span><span>LangGraph</span><span>Claude Sonnet</span><span>LangChain</span><span>Docker</span><span>RAG</span><span>Render</span>
+            </div>
+          </div>
+        </div>
 
-    <div class="ai-project-card">
-      <div class="ai-project-img-wrap">
-        <img src="./assets/autoresearch.png" alt="AutoResearch" class="ai-project-img" />
-        <div class="ai-project-overlay">
-          <a href="https://autoresearch-ai-three.vercel.app" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
-          <a href="https://github.com/Shourav5000/autoresearch_ai" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/Sho Ai.png" alt="SHO.AI" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://shourav5000.github.io/sho-ai" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/sho-ai" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">SHO.AI — Autonomous AI Agent</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">A full-stack autonomous AI agent powered by Claude Opus and LangGraph's ReAct architecture. Autonomously selects from 6 tools — web search, weather, news, Wikipedia, calculator, and image recognition.</p>
+            <div class="ai-project-features">
+              <span>🔍 Web Search</span><span>🌤️ Weather</span><span>🖼️ Vision</span>
+              <span>🎤 Voice</span><span>💾 Memory</span><span>⚡ Streaming</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>Flask</span><span>LangGraph</span><span>Claude Opus</span><span>React</span><span>Render</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="ai-project-body">
-        <div class="ai-project-header">
-          <h2 class="ai-project-title">AutoResearch — Multi-Agent AI Research System</h2>
-          <span class="ai-project-status live">● Live</span>
-        </div>
-        <p class="ai-project-desc">Production-grade multi-agent AI system built with LangGraph where four specialized agents autonomously collaborate to deliver comprehensive cited research reports. Planner breaks queries into sub-tasks, Researcher runs parallel web searches, Critic reviews quality and loops back if gaps are found, Synthesizer writes the final report — all streamed live via SSE. Features PDF export and persistent research history.</p>
-        <div class="ai-project-features">
-          <span>🗂️ Multi-Agent Graph</span><span>🔍 Real Web Search</span>
-          <span>🧐 Critic Loop</span><span>📄 PDF Export</span>
-        </div>
-        <div class="ai-project-tech">
-          <span>Python</span><span>LangGraph</span><span>FastAPI</span><span>Claude API</span><span>Tavily</span><span>React</span><span>Render</span><span>Vercel</span>
-        </div>
-      </div>
-    </div>
-    <div class="ai-project-card">
-      <div class="ai-project-img-wrap">
-        <img src="./assets/Sho Ai.png" alt="SHO.AI" class="ai-project-img" />
-        <div class="ai-project-overlay">
-          <a href="https://shourav5000.github.io/sho-ai" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
-          <a href="https://github.com/Shourav5000/sho-ai" target="_blank" class="ai-project-link-btn outline">GitHub</a>
-        </div>
-      </div>
-      <div class="ai-project-body">
-        <div class="ai-project-header">
-          <h2 class="ai-project-title">SHO.AI — Autonomous AI Agent</h2>
-          <span class="ai-project-status live">● Live</span>
-        </div>
-        <p class="ai-project-desc">A full-stack autonomous AI agent powered by Claude Opus and LangGraph's ReAct architecture. Autonomously selects from 6 tools — web search, weather, news, Wikipedia, calculator, and image recognition.</p>
-        <div class="ai-project-features">
-          <span>🔍 Web Search</span><span>🌤️ Weather</span><span>🖼️ Vision</span>
-          <span>🎤 Voice</span><span>💾 Memory</span><span>⚡ Streaming</span>
-        </div>
-        <div class="ai-project-tech">
-          <span>Python</span><span>Flask</span><span>LangGraph</span><span>Claude Opus</span><span>React</span><span>Render</span>
-        </div>
-      </div>
-    </div>
 
-    <div class="ai-project-card">
-      <div class="ai-project-img-wrap">
-        <img src="./assets/therapist.png" alt="Therapist SHO.AI" class="ai-project-img" />
-        <div class="ai-project-overlay">
-          <a href="https://therapist-sho-ai.onrender.com" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
-          <a href="https://github.com/Shourav5000/therapist-sho-ai" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/RAG_Document.png" alt="RAG Document AI" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://shourav5000.github.io/rag-system" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/rag-system" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">RAG Document AI</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">Upload any PDF and ask questions using a full RAG pipeline. Built with LangChain LCEL, ChromaDB vector store, and Anthropic Claude as the LLM. Returns answers with source citations.</p>
+            <div class="ai-project-features">
+              <span>📄 PDF Upload</span><span>🔢 Vector Search</span>
+              <span>📖 Source Citations</span><span>🧠 Semantic Search</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Claude API</span><span>React</span><span>Flask</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="ai-project-body">
-        <div class="ai-project-header">
-          <h2 class="ai-project-title">Therapist @ SHO.AI — Mental Wellness AI</h2>
-          <span class="ai-project-status live">● Live</span>
-        </div>
-        <p class="ai-project-desc">Full-stack AI mental wellness companion powered by Claude Sonnet 4.5, LangChain, and LangGraph. Multi-tool agent with real-time streaming, emotion detection, RAG-based journal search, breathing exercises, mood tracking, ambient sounds, voice I/O, and crisis detection. Deployed on Render with Docker — optimized memory from 1.5GB to under 200MB using TF-IDF in place of HuggingFace embeddings.</p>
-        <div class="ai-project-features">
-          <span>🧠 Emotion Detection</span><span>📓 Journal RAG</span>
-          <span>🎤 Voice I/O</span><span>🚨 Crisis Detection</span>
-        </div>
-        <div class="ai-project-tech">
-          <span>Python</span><span>Flask</span><span>LangGraph</span><span>Claude Sonnet</span><span>LangChain</span><span>Docker</span><span>RAG</span><span>Render</span>
-        </div>
-      </div>
-    </div>
 
-    
+        <div class="ai-project-card">
+          <div class="ai-project-img-wrap">
+            <img src="./assets/AI_CHAT_BOT.png" alt="AI Chatbot" class="ai-project-img" />
+            <div class="ai-project-overlay">
+              <a href="https://shourav5000.github.io/ai-chatbot" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
+              <a href="https://github.com/Shourav5000/ai-chatbot" target="_blank" class="ai-project-link-btn outline">GitHub</a>
+            </div>
+          </div>
+          <div class="ai-project-body">
+            <div class="ai-project-header">
+              <h2 class="ai-project-title">AI Chatbot — LLM Integration</h2>
+              <span class="ai-project-status live">● Live</span>
+            </div>
+            <p class="ai-project-desc">A full-stack luxury fashion AI chatbot with a secure Python Flask backend and React frontend. Features prompt engineering, stateful conversation memory, and secure API key management.</p>
+            <div class="ai-project-features">
+              <span>💬 Conversation Memory</span><span>🔐 Secure API</span>
+              <span>👗 Style Assistant</span><span>⚡ Real-time</span>
+            </div>
+            <div class="ai-project-tech">
+              <span>Python</span><span>Flask</span><span>Claude API</span><span>React</span><span>GitHub Pages</span><span>Render</span>
+            </div>
+          </div>
+        </div>
 
-    <div class="ai-project-card">
-      <div class="ai-project-img-wrap">
-        <img src="./assets/RAG_Document.png" alt="RAG Document AI" class="ai-project-img" />
-        <div class="ai-project-overlay">
-          <a href="https://shourav5000.github.io/rag-system" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
-          <a href="https://github.com/Shourav5000/rag-system" target="_blank" class="ai-project-link-btn outline">GitHub</a>
-        </div>
       </div>
-      <div class="ai-project-body">
-        <div class="ai-project-header">
-          <h2 class="ai-project-title">RAG Document AI</h2>
-          <span class="ai-project-status live">● Live</span>
-        </div>
-        <p class="ai-project-desc">Upload any PDF and ask questions using a full RAG pipeline. Built with LangChain LCEL, ChromaDB vector store, and Anthropic Claude as the LLM. Returns answers with source citations.</p>
-        <div class="ai-project-features">
-          <span>📄 PDF Upload</span><span>🔢 Vector Search</span>
-          <span>📖 Source Citations</span><span>🧠 Semantic Search</span>
-        </div>
-        <div class="ai-project-tech">
-          <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Claude API</span><span>React</span><span>Flask</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="ai-project-card">
-      <div class="ai-project-img-wrap">
-        <img src="./assets/AI_CHAT_BOT.png" alt="AI Chatbot" class="ai-project-img" />
-        <div class="ai-project-overlay">
-          <a href="https://shourav5000.github.io/ai-chatbot" target="_blank" class="ai-project-link-btn">🚀 Live Demo</a>
-          <a href="https://github.com/Shourav5000/ai-chatbot" target="_blank" class="ai-project-link-btn outline">GitHub</a>
-        </div>
-      </div>
-      <div class="ai-project-body">
-        <div class="ai-project-header">
-          <h2 class="ai-project-title">AI Chatbot — LLM Integration</h2>
-          <span class="ai-project-status live">● Live</span>
-        </div>
-        <p class="ai-project-desc">A full-stack luxury fashion AI chatbot with a secure Python Flask backend and React frontend. Features prompt engineering, stateful conversation memory, and secure API key management.</p>
-        <div class="ai-project-features">
-          <span>💬 Conversation Memory</span><span>🔐 Secure API</span>
-          <span>👗 Style Assistant</span><span>⚡ Real-time</span>
-        </div>
-        <div class="ai-project-tech">
-          <span>Python</span><span>Flask</span><span>Claude API</span><span>React</span><span>GitHub Pages</span><span>Render</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
       <div class="ai-projects-label" style="margin-top:3rem;">
         <span class="ai-badge work">💼 Work Projects</span>
